@@ -13,7 +13,7 @@ Version:        1.0
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="This is the official site for NoMoreSpam, an email spam detector" />
         <!--    Custom CSS    -->
-        <link href="../static/style.css" rel="stylesheet" />
+        <link href="../static/css/style.css" rel="stylesheet" />
         <!--    FontAwesome CSS    -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     </head>
@@ -29,10 +29,12 @@ Version:        1.0
                     </p>
                 </div>
                 <div class="resultCont">
-                    <p id="result">
-                        Verdict: <span id="resultText"></span> <br>
-                        Likelihood: <span id="resultPercent"></span>
-                    </p>
+                    <div class="resultRow">
+                        <span class="resultLabel">Verdict:</span> <span id="resultText"></span>
+                    </div>
+                    <div class="resultRow">
+                        <span class="resultLabel">Likelihood:</span> <span id="resultPercent"></span>
+                    </div>
                 </div>
                 <div class="btnCont">
                     <button id="btn">Submit for Analysis</button>
@@ -76,5 +78,7 @@ Version:        1.0
                 </p>
             </div>
         </footer>
+        <!--    Custom JavaScript    -->
+        <script src="../static/js/script.js"></script>
     </body>
 </html>

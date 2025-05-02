@@ -34,7 +34,7 @@ body {
     border-radius: 10px;
     border: #262728 solid 3px;
     background-color: #747474;
-    padding: 0.5rem;
+    padding: 0.5rem 0.75rem;
     color: whitesmoke;
     font-size: 18px;
     overflow-wrap: normal;
@@ -153,9 +153,14 @@ body {
     transition: 0.3s ease all;
 }
 
-#btn:hover {
+#btn:hover:not(:disabled) {
     transform: scale(1.05);
     box-shadow: 0px 0px 10px 1px #113169;
+}
+
+#btn:disabled {
+    cursor: not-allowed;
+    background: rgb(75, 75, 75) !important;
 }
 
 .extrasCont {

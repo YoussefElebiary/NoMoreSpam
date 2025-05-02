@@ -1,0 +1,80 @@
+<!--
+File:           index.html
+Description:    This file contains the HTML structure of NoMoreSpam
+Author:         Youssef Elebiary
+Version:        1.0
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NoMoreSpam</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="This is the official site for NoMoreSpam, an email spam detector" />
+        <!--    Custom CSS    -->
+        <link href="../static/style.css" rel="stylesheet" />
+        <!--    FontAwesome CSS    -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+    <body>
+        <div class="mainCont">
+            <div class="textCont">
+                <textarea id="textArea" placeholder="Enter the content of the email"></textarea>
+            </div>
+            <div class="submitCont">
+                <div class="nameCont">
+                    <p id="name">
+                        NoMoreSpam
+                    </p>
+                </div>
+                <div class="resultCont">
+                    <p id="result">
+                        Verdict: <span id="resultText"></span> <br>
+                        Likelihood: <span id="resultPercent"></span>
+                    </p>
+                </div>
+                <div class="btnCont">
+                    <button id="btn">Submit for Analysis</button>
+                </div>
+                <div class="extrasCont">
+                    <p id="disclaimer">
+                        This classifier predicts spam with <strong>98% accuracy</strong> based on the training data. <br>
+                        Always verify critical decisions manually.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="socialsCont">
+                <p class="socialsHeader">
+                    Follow me on
+                </p>
+                <ul class="socialsList">
+                    <li class="socialItem">
+                        <a class="socialLink" href="https://www.linkedin.com/in/youssef-elebiary/">
+                            <i class="fab fa-linkedin" style="color: darkgray;"></i> &nbsp;
+                            LinkedIn
+                        </a>
+                    </li>
+                    <li class="socialItem">
+                        <a class="socialLink" href="https://github.com/YoussefElebiary">
+                            <i class="fab fa-github" style="color: darkgray;"></i> &nbsp;
+                            GitHub
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="licensing">
+                <p id="license">
+                    NoMoreSpam was developed by Youssef Elebiary. <br>
+                    Licensed under the MIT license. <br>
+                    NoMoreSpam 2025©
+                </p>
+                <p id="srcCode">
+                    For the source code <a class="srcCodeLink" href="https://github.com/YoussefElebiary/NoMoreSpam">click here</a>.
+                </p>
+            </div>
+        </footer>
+    </body>
+</html>

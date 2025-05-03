@@ -144,7 +144,7 @@ body {
     height: 3rem;
     border-radius: 10px;
     border: #393a3b solid 3px;
-    background: linear-gradient(225deg, #5d5e5f 0%, #878889 100%);
+    background: radial-gradient(circle, #878889 0%, #434343 155%);
     color: rgb(25, 25, 25);
     outline: none;
     cursor: pointer;
